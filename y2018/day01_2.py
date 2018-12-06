@@ -1,8 +1,4 @@
-import os
-import sys
-
-
-def solve():
+def solve(read):
     accumulator = 0
     frequencies = [int(f) for f in read]
     visited_frequencies = set([0])
@@ -16,14 +12,3 @@ def solve():
                 break
             else:
                 visited_frequencies.add(accumulator)
-
-
-if os.environ.get('DEBUG'):
-    filename = __file__.split('.')[0] + '.input'
-    read = open(filename)
-else:
-    read = sys.stdin
-
-solve()
-
-read.close
