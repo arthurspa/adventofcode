@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Python: Advent of Code",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/runner.py",
             "console": "integratedTerminal",
