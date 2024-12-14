@@ -85,3 +85,12 @@ class Grid(list):
             return None
 
         return (ni, nj)
+
+    def get_text(self) -> str:
+        text = ""
+        for i in range(len(self)):
+            for j in range(len(self[i])):
+                text += str(self[i][j])
+            text += "\n"
+
+        return text
